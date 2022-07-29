@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: antiquewhite; */
+    height: 100vh;
+    background-image: linear-gradient(to right, rgb(177, 119, 119), brown);
+}
+
+.road{
+    /* background-color: aqua; */
+    position: relative;
+    overflow: hidden;
+}
+
+.road img{
+    height: 700px;
+    width: 600px;
+}
+
+.bird{
+    /* background-color: blue; */
+    width: fit-content;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation: value 1.2s infinite linear;
+}
+
+.bird .birdImg{
+    background-color: transparent;
+    display: block;
+    height: 100px;
+    width: 200px;
+}
+
+@keyframes value {
+    0%{
+       top: 0px; 
+    }
+    100%{
+        top: 700px;
+    }
+}
+
+.peachu{
+    /* background-color: cadetblue; */
+    width: fit-content;
+    position: absolute;
+    top: 450px;
+    left: 200px;
+}
+
+.peachu .peachuImg{
+    background-color: transparent;
+    height: 125px;
+    width: 200px;  
+}
+
+.over{
+    height: 280px;
+    width: 450px;
+    margin: auto;
+    background-color: grey;
+    margin-top: 50px;
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 3px 10px grey;
+    border-radius: 5px;
+    border: 1px solid rgb(140, 135, 135);
+    color: rgb(62, 53, 53);
+    background-image: linear-gradient(to right, rgb(177, 119, 119), brown);
+}
+
+.gameOver{
+    font-size: 45px;
+    letter-spacing: 8px;
+    font-variant: small-caps;
+}
+
+.score{
+    font-size: 2rem;
+    letter-spacing: 3px;
+    margin-top: 20px;
+}
+
+.btn{
+    font-size: 22px;
+    border-radius: 3px;
+    border: none;
+    padding: 8px;
+    margin: 20px;
+    background-color: rgb(122, 106, 137);
+    font-variant: small-caps;
+    letter-spacing: 2px;
+}
+
+.btn:hover{
+    background-color: rgb(62, 53, 53);
+    color: white;
+}
+
+h5{
+    margin-top: 15px;
+}
+
